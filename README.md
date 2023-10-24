@@ -11,3 +11,5 @@ Due to the fact that often there are big datasets in the background it is necess
 - just host the webpage on your server
 - add your custom database as .csv
 - visit the webpage and quickly search your database
+
+![Webpage](webpage_picture.jpg)
