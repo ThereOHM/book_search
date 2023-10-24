@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Search</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Book Search</h1>
+  <input type="text" id="searchInput" placeholder="Enter author or book title">
+  <button id="searchButton">Search</button>
+  <table id="bookTable">
+    <thead>
+      <tr>
+        <th>
+          <div class="header-text">Nr.</div>
+          <div class="sort-icon-container" onclick="sortTable(0)"><span class="sort-icon"></span></div>
+        </th>
+        <th>
+          <div class="header-text">Autor</div>
+          <div class="sort-icon-container" onclick="sortTable(1)"><span class="sort-icon"></span></div>
+        </th>
+        <th>
+          <div class="header-text">Titel</div>
+          <div class="sort-icon-container" onclick="sortTable(2)"><span class="sort-icon"></span></div>
+        </th>
+        <th>
+          <div class="header-text">Format</div>
+          <div class="sort-icon-container" onclick="sortTable(3)"><span class="sort-icon"></span></div>
+        </th>
+        <th>
+          <div class="header-text">Inhaltsbeschreibung</div>
+          <div class="sort-icon-container" onclick="sortTable(4)"><span class="sort-icon"></span></div>
+        </th>
+        <th>
+          <div class="header-text">Genre</div>
+          <div class="sort-icon-container" onclick="sortTable(5)"><span class="sort-icon"></span></div>
+        </th>
+        <th>
+          <div class="header-text">Verlag</div>
+          <div class="sort-icon-container" onclick="sortTable(6)"><span class="sort-icon"></span></div>
+        </th>
+        <th>
+          <div class="header-text">Sprache</div>
+          <div class="sort-icon-container" onclick="sortTable(7)"><span class="sort-icon"></span></div>
+        </th>
+        <th>
+          <div class="header-text">Zustand</div>
+          <div class="sort-icon-container" onclick="sortTable(8)"><span class="sort-icon"></span></div>
+        </th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+      <!-- Table rows will be dynamically added here -->
+    </tbody>
+  </table>
+  
+ <div id="loadMore">
+    <button onclick="loadMoreRows()">Load More</button>
+  </div>
+
+ <button onclick="topFunction()" id="myBtn" title="Go to top">^</button> 
+  
+  <script src="script.js"></script>
+</body>
+</html>
